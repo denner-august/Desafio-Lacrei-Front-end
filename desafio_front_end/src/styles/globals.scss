@@ -1,0 +1,22 @@
+:root {
+  --color-principal: white;
+  --color-header-background: #eeeeee;
+  --color-green: #018762;
+  --color-black: #1f1f1f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-principal);
+  color: var(--color-black);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
