@@ -9,7 +9,7 @@ export const Context = createContext({} as ContextProviderProps)
 
 export function ContextProvider({ children }: contextProps) {
 
-    const [linkActiveNow, setLinkActiveNow] = useState(3)
+    const [linkActiveNow, setLinkActiveNow] = useState(1)
 
     return (
         <Context.Provider value={{ linkActiveNow, setLinkActiveNow }}>
