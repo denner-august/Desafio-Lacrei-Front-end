@@ -9,15 +9,14 @@ export const Container = styled.div`
   }
 
   p {
-  
-     font-size: 24px;
-    
     width: 403px;
     margin-bottom: 60px;
-    color: #515151;
+  
+    font-size: 24px;
     font-weight: 400; 
-    
 
+    color: #515151;
+    
     text-align: left;
   }
 
@@ -51,6 +50,8 @@ export const Container = styled.div`
   }
 
   @media screen and (max-width: 520px) {
+    padding:0px 20px;
+
     div{
 
       flex-direction: column;
@@ -66,15 +67,15 @@ export const Container = styled.div`
     }
 
     h1 {
-      font-size:1.3rem;
+      text-align: center;
+      font-size:1.5rem;
       width:auto;
       
     }
 
     p {
       width:auto;
-      text-align:center;
-      font-size: 0.875rem;
+      font-size: 1rem;
     }
 }
   }
