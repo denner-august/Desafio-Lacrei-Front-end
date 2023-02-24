@@ -2,23 +2,18 @@ import { useContext } from "react";
 import { Container } from "./styles/descricaoStyles";
 import { Context } from "context/context";
 import { fontNunito400, fontNunito700 } from "fonts";
+import { main_descricao_Props } from "types";
 
-interface DescricaoProps {
-    titulo: string;
-    descricao: string,
-    buttons: boolean
-}
-
-export function Descricao({ titulo, descricao, buttons }: DescricaoProps) {
-    const { setLinkActiveNow } = useContext(Context)
+export function Descricao({ titulo, descricao, buttons }: main_descricao_Props) {
+    const { rotas } = useContext(Context)
 
     return (
         <Container className="Descricao">
             <h1 className={fontNunito700.className}>{titulo}</h1>
             <p className={fontNunito400.className}>{descricao}</p>
             {buttons === true ? <div>
-                <button onClick={() => setLinkActiveNow(2)}>Pessoa Usuária</button>
-                <button onClick={() => setLinkActiveNow(3)}>Profissional</button>
+                <button onClick={() => rotas(1)}>Pessoa Usuária</button>
+                <button onClick={() => rotas(2)}>Profissional</button>
             </div> : null}
         </Container>
     )
