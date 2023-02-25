@@ -1,12 +1,14 @@
 import { Container } from "./styles/renderImageStyles";
 import Image from "next/image";
 
-import image1 from '../../public/imagens/rafiki 2.svg'
+interface renderImageProps {
+    imagem: string
+}
 
-export function RenderImage() {
+export function RenderImage({ imagem }: renderImageProps) {
     return (
         <Container className="renderImage">
-            <Image className="image" src={image1} alt="teste" />
+            <Image className="image" src={imagem} alt="imagem de medica" />
         </Container>
     )
 }

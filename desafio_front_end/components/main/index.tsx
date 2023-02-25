@@ -3,11 +3,15 @@ import { Descricao } from "./descricao"
 import { RenderImage } from "./renderImage"
 import { Container } from "./styles/MainStyles"
 
-export function Main({ titulo, descricao, buttons = true }: main_descricao_Props) {
+import { imagens } from "context/imagens"
+
+
+export function Main({ titulo, descricao, buttons = true, imagem = imagens.imagem1 }: main_descricao_Props) {
+
     return (
         <Container>
             <Descricao titulo={titulo} descricao={descricao} buttons={buttons} />
-            <RenderImage />
+            <RenderImage imagem={imagem} />
         </Container>
     )
 }
