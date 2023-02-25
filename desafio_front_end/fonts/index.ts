@@ -1,6 +1,6 @@
 import { Nunito } from "@next/font/google";
 
-export const fontNunito700 = Nunito({ weight: "700" });
+export const fontNunito700 = Nunito({ weight: "700", preload: false });
 export const fontNunito400 = Nunito({ weight: "400" });
 
 /* 
