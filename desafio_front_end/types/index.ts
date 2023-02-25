@@ -7,4 +7,5 @@ export interface main_descricao_Props {
   titulo: string;
   descricao: string;
   buttons: boolean;
+  imagem?: string;
 }
