@@ -1,8 +1,8 @@
 import { Container } from "./styles/renderImageStyles";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface renderImageProps {
-    imagem: string
+    imagem: StaticImageData
 }
 
 export function RenderImage({ imagem }: renderImageProps) {
