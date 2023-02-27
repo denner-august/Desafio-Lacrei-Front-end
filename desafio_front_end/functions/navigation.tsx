@@ -10,7 +10,7 @@ export function Navigation() {
 
     return linkNavigation.map((links, index) => {
 
-        return <a onClick={() => rotas(index)} key={Math.random()}>{links}</a>
+        return <a role="link" onClick={() => rotas(index)} key={Math.random()}>{links}</a>
     })
 
 }
